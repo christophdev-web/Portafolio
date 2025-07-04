@@ -1,0 +1,127 @@
+/* Fuente base y reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fffaf2;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Encabezado */
+header {
+  background-color: #ff6e0dd2;
+  color: white;
+  padding: 20px 0;
+}
+header .logo {
+  font-size: 1.8rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background-image: url('Panaderia.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 120px 20px;
+  
+  content: "";
+  
+  background-color: rgb(74, 75, 114); /* negro semitransparente */
+ 
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero .btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+.hero .btn:hover {
+  background-color: #d30000;
+}
+
+/* Secciones */
+section {
+  padding: 60px 0;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #3d3361;
+}
+
+/* Productos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.item {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.navbar {
+  background-color: #111;
+  padding: 10px 20px;
+  text-align: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar a:hover {
+  color: #6ea0ff;
+}
+
